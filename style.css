@@ -1,0 +1,220 @@
+/* ===================== RESET ===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* ===================== BODY ===================== */
+body {
+    color: #4a004a;
+    min-height: 100vh;
+
+    background-image: url("images/Yay.jfif"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* ===================== LOGIN / SIGNUP ===================== */
+body.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff71a3, #fad0c4);
+    height: 100vh;
+}
+
+.login-container {
+    background: #fff;
+    width: 330px;
+    padding: 32px;
+    border-radius: 18px;
+    box-shadow: 0 25px 50px rgba(255, 105, 180, 0.35);
+    animation: popIn 0.6s ease;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 22px;
+    color: #d63384;
+    letter-spacing: 1px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 10px;
+    border: 1px solid #f3b5c8;
+    font-size: 14px;
+    outline: none;
+}
+
+.login-container input:focus {
+    border-color: #d63384;
+    box-shadow: 0 0 0 2px rgba(214, 51, 132, 0.2);
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    background: linear-gradient(135deg, #ff4d8d, #d63384);
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.login-container button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(214, 51, 132, 0.45);
+}
+
+.login-container p {
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+.login-container a {
+    color: #d63384;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@keyframes popIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ===================== DASHBOARD ===================== */
+header {
+    background-color: #ffb6c1;
+    padding: 20px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    border-bottom: 3px solid #ff69b4;
+    letter-spacing: 1px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 40px;
+}
+
+.card {
+    background-color: #ffcce0;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 30px 20px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+    font-size: 22px;
+    color: #4a004a;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 15px;
+    color: #660033;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #ffb6c1;
+    border-top: 3px solid #ff69b4;
+    font-size: 14px;
+    color: #4a004a;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Logout button */
+button.logout-btn {
+    background-color: #d63384;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-weight: bold;
+}
+
+button.logout-btn:hover {
+    background-color: #ff4d8d;
+}
+
+/* ===================== MYTH PAGE ===================== */
+body.myth-body {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #d63384;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+#myth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#myth-container .card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+    border-left: 6px solid #ff66b3;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#myth-container .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+strong {
+    color: #d63384;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #6a006a;
+}
