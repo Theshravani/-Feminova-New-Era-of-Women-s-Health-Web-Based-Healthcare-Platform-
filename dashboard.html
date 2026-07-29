@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feminova Dashboard</title>
+  <style>
+   body {
+    color: #4a004a;
+    min-height: 100vh;
+
+    background-image: url("{{ url_for('static', filename='images/bbk.jpeg') }}"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+    header {
+      background-color: #ff71a3;
+      padding: 20px;
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+      border-bottom: 3px solid #ff71a3;
+      letter-spacing: 1px;
+      position: relative;
+    }
+
+    .logout {
+      position: absolute;
+      right: 20px;
+      top: 25px;
+      font-size: 14px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      padding: 40px;
+    }
+
+    .card {
+      background-color: #ffcce0;
+      border-radius: 20px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 30px 20px;
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+
+    .card h2 {
+      font-size: 22px;
+      color: #4a004a;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      font-size: 15px;
+      color: #660033;
+      margin-bottom: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #ff71a3;
+      border-top: 3px solid #ff71a3;
+      font-size: 14px;
+      color: #4a004a;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Feminova Dashboard
+    <a href="/logout" class="logout">Logout</a>
+  </header>
+
+  <div class="container">
+    <a href="/period">
+      <div class="card">
+        <h2>Period Tracking</h2>
+        <p>Track your menstrual cycle and predict next periods.</p>
+      </div>
+    </a>
+
+    <a href="http://localhost:8000">
+      <div class="card">
+        <h2>AI Chatbot</h2>
+        <p>Ask questions related to women's health anytime.</p>
+      </div>
+    </a>
+
+    <a href="/myth">
+      <div class="card">
+        <h2>Myth Busting</h2>
+        <p>Learn the truth behind common health myths.</p>
+      </div>
+    </a>
+
+    <a href="/news">
+      <div class="card">
+        <h2>FemiNews</h2>
+        <p>Track your menstrual cycle and predict next periods.</p>
+      </div>
+    </a>
+
+    <a href="/exercise">
+      <div class="card">
+        <h2>Exercise</h2>
+        <p>Do some exercise to ease pain.</p>
+      </div>
+    </a>
+
+  </div>
+
+  <footer>
+    © 2026 Women Health | Feminova - New era of women's health.
+    <h3 style="text-align:center;">Women & Health Helplines (Mumbai)</h3>
+      <p><strong>Women Helpline (24x7):</strong> 181</p> 
+      <p><strong>Mumbai Police Emergency:</strong> 100</p> 
+      <p><strong>Mumbai Women Safety Helpline:</strong> 103</p> 
+      <p><strong>National Health Helpline:</strong> 1075</p> 
+      <p><strong>Ambulance:</strong> 108</p> 
+      <p><strong>National Commission for Women:</strong> 7827170170</p>
+  </footer>
+
+</body>
+</html>
